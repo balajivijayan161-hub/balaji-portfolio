@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --color-ink: #071018;
+  --color-navy: #0c1726;
+  --color-panel: #101c2e;
+  --color-line: #1c3a52;
+  --color-cyan: #5ee7ff;
+  --color-blue: #7eb6ff;
+  --color-mist: #d7e6f4;
+  --color-muted: #a9bfd2;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-ink);
+  color: var(--color-mist);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+}
+
+body,
+#root {
+  overflow-x: clip;
+}
+
+::selection {
+  background: #145066;
+  color: #f4fbff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 3px;
+}
+
+dialog::backdrop {
+  background: rgba(2, 6, 14, 0.78);
+}
+
+dialog {
+  color: inherit;
+}
+
+.caret {
+  display: inline-block;
+  width: 0.55ch;
+  margin-left: 1px;
+  color: var(--color-cyan);
+  animation: caret-blink 1s steps(1) infinite;
+}
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.pcb-frame {
+  position: relative;
+}
+
+.pcb-frame::before,
+.pcb-frame::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.pcb-frame::before {
+  top: 8px;
+  left: 8px;
+  border-top: 1px solid rgb(94 231 255 / 0.7);
+  border-left: 1px solid rgb(94 231 255 / 0.7);
+}
+
+.pcb-frame::after {
+  right: 8px;
+  bottom: 8px;
+  border-right: 1px solid rgb(94 231 255 / 0.7);
+  border-bottom: 1px solid rgb(94 231 255 / 0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .caret {
+    animation: none;
+  }
+}

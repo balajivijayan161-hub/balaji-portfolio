@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="atmTitle atmDesc">
+  <title id="atmTitle">Illustration of an ATM cash-monitoring concept</title>
+  <desc id="atmDesc">Line illustration of an ATM connected to role access, cash forecasting, and an activity log. This is not a screenshot of the application.</desc>
+  <rect width="1200" height="750" fill="#0c1726"/>
+  <g stroke="#16324a" stroke-width="1" fill="none">
+    <path d="M0 80H1200M0 200H1200M0 320H1200M0 440H1200M0 560H1200M0 680H1200"/>
+    <path d="M80 0V750M200 0V750M320 0V750M440 0V750M560 0V750M680 0V750M800 0V750M920 0V750M1040 0V750M1160 0V750"/>
+  </g>
+  <g fill="none" stroke="#5ee7ff" stroke-width="2">
+    <path d="M40 40h28M40 40v28M1160 40h-28M1160 40v28M40 710h28M40 710v-28M1160 710h-28M1160 710v-28"/>
+  </g>
+  <g transform="translate(90 145)">
+    <rect x="0" y="0" width="360" height="470" rx="18" fill="#101c2e" stroke="#5ee7ff" stroke-width="2"/>
+    <rect x="36" y="36" width="288" height="168" rx="8" fill="#071018" stroke="#4c8dff" stroke-width="2"/>
+    <path d="M60 78h150M60 108h110M60 138h170" stroke="#5ee7ff" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+    <circle cx="286" cy="120" r="16" fill="none" stroke="#5ee7ff" stroke-width="2"/>
+    <rect x="36" y="236" width="288" height="64" rx="8" fill="#071018" stroke="#1e3a52" stroke-width="2"/>
+    <path d="M58 268h200" stroke="#9fb3c8" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <rect x="120" y="330" width="120" height="78" rx="8" fill="none" stroke="#5ee7ff" stroke-width="2"/>
+    <path d="M146 354h68M158 354v30M204 354v30" stroke="#5ee7ff" stroke-width="2"/>
+    <text x="180" y="438" text-anchor="middle" fill="#9fb3c8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">ATM</text>
+  </g>
+  <g fill="none" stroke="#5ee7ff" stroke-width="2">
+    <path d="M450 250h70" stroke-dasharray="6 6"/>
+    <path d="M520 250h40v-80h70"/>
+    <path d="M520 250h40v80h70"/>
+    <path d="M520 250h40v240h70"/>
+  </g>
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <g transform="translate(630 115)">
+      <rect width="430" height="92" rx="14" fill="#101c2e" stroke="#5ee7ff" stroke-width="1.5"/>
+      <text x="24" y="40" fill="#5ee7ff" font-size="14" letter-spacing="2">ACCESS</text>
+      <text x="24" y="68" fill="#e8f4ff" font-size="26">Six roles</text>
+    </g>
+    <g transform="translate(630 275)">
+      <rect width="430" height="92" rx="14" fill="#101c2e" stroke="#4c8dff" stroke-width="1.5"/>
+      <text x="24" y="40" fill="#7eb6ff" font-size="14" letter-spacing="2">CASH</text>
+      <text x="24" y="68" fill="#e8f4ff" font-size="22">Forecast and denominations</text>
+    </g>
+    <g transform="translate(630 435)">
+      <rect width="430" height="92" rx="14" fill="#101c2e" stroke="#5ee7ff" stroke-width="1.5"/>
+      <text x="24" y="40" fill="#5ee7ff" font-size="14" letter-spacing="2">RECORD</text>
+      <text x="24" y="68" fill="#e8f4ff" font-size="26">Append-only activity log</text>
+    </g>
+  </g>
+  <text x="600" y="78" text-anchor="middle" fill="#9fb3c8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18" letter-spacing="3">ILLUSTRATION | NOT A SCREENSHOT</text>
+  <text x="600" y="690" text-anchor="middle" fill="#d5e4f2" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28">ATM cash replenishment and downtime monitoring</text>
+</svg>

@@ -1,0 +1,19 @@
+# Render static site. Rewrites keep client routes such as /admin working on refresh.
+# Real files in dist (resume, images, assets) are still served directly.
+services:
+  - type: web
+    name: balaji-vijayan
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_WEB3FORMS_KEY
+        sync: false
+      - key: VITE_SUPABASE_URL
+        sync: false
+      - key: VITE_SUPABASE_ANON_KEY
+        sync: false
