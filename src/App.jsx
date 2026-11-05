@@ -148,7 +148,7 @@ export default function App() {
 
   let page = <NotFound />;
   if (path === "/" || path === "/index.html") page = <Portfolio />;
-  if (path === "/admin") {
+  if (path === "/admin" || path === "/admin/index.html") {
     page = (
       <>
         <AdminRobots />
