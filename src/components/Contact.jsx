@@ -110,11 +110,6 @@ export function Contact() {
         </div>
 
         <form onSubmit={onSubmit} noValidate className="relative rounded-2xl border border-white/10 bg-panel/80 p-5 sm:p-6">
-          {!key ? (
-            <p className="mb-4 rounded-xl border border-cyan/20 bg-cyan/5 px-3 py-2 text-sm text-mist">
-              The contact form is not connected to Web3Forms yet. After a valid message, it opens your email app instead.
-            </p>
-          ) : null}
           <div className="grid gap-4">
             <div>
               <label htmlFor="contact-name" className="text-sm text-mist">
