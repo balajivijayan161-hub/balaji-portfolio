@@ -26,7 +26,7 @@ export const profile = {
   photo: {
     // Set src to a public path, such as "/images/profile.jpg", only after that file exists.
     // null shows the initials and does not request a missing image.
-    src: null,
+    src: "/images/profile.jpg",
     alt: "Balaji Vijayan",
     initials: "BV",
   },
@@ -557,11 +557,58 @@ export const experience = [
 // Optional certificate scans: set image to a file under public/images/certificates/. See README.
 export const certifications = [
   {
-    id: "ccna",
+    id: "ccna-ensa",
+    name: "CCNA: Enterprise Networking, Security, and Automation",
+    issuer: "Cisco Networking Academy",
+    date: "9 June 2026",
+    href: "/certificates/ccna-enterprise-networking.pdf",
+    image: "/images/certificates/ccna-enterprise-networking.webp",
+    imageAlt: "Cisco Networking Academy certificate for CCNA: Enterprise Networking, Security, and Automation",
+  },
+  {
+    id: "ccna-srwe",
+    name: "CCNA: Switching, Routing, and Wireless Essentials",
+    issuer: "Cisco Networking Academy",
+    date: "9 June 2026",
+    href: "/certificates/ccna-switching-routing-wireless.pdf",
+    image: "/images/certificates/ccna-switching-routing-wireless.webp",
+    imageAlt: "Cisco Networking Academy certificate for CCNA: Switching, Routing, and Wireless Essentials",
+  },
+  {
+    id: "ccna-itn",
     name: "CCNA: Introduction to Networks",
-    issuer: "Cisco",
-    image: null,
-    imageAlt: "Cisco CCNA Introduction to Networks certificate",
+    issuer: "Cisco Networking Academy",
+    date: "12 March 2026",
+    href: "/certificates/ccna-introduction-to-networks.pdf",
+    image: "/images/certificates/ccna-introduction-to-networks.webp",
+    imageAlt: "Cisco Networking Academy certificate for CCNA: Introduction to Networks",
+  },
+  {
+    id: "infosys-javascript",
+    name: "JavaScript",
+    issuer: "Infosys Springboard",
+    date: "17 March 2025",
+    href: "/certificates/infosys-javascript.pdf",
+    image: "/images/certificates/infosys-javascript.webp",
+    imageAlt: "Infosys Springboard JavaScript certificate",
+  },
+  {
+    id: "infosys-html5",
+    name: "HTML5 - The Language",
+    issuer: "Infosys Springboard",
+    date: "17 March 2025",
+    href: "/certificates/infosys-html5.pdf",
+    image: "/images/certificates/infosys-html5.webp",
+    imageAlt: "Infosys Springboard HTML5 - The Language certificate",
+  },
+  {
+    id: "infosys-css3",
+    name: "CSS3",
+    issuer: "Infosys Springboard",
+    date: "17 March 2025",
+    href: "/certificates/infosys-css3.pdf",
+    image: "/images/certificates/infosys-css3.webp",
+    imageAlt: "Infosys Springboard CSS3 certificate",
   },
   {
     id: "infosys-java",

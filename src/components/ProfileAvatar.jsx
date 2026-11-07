@@ -13,7 +13,7 @@ export function ProfileAvatar({ photo, className = "" }) {
             alt={photo.alt}
             width="320"
             height="320"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-[center_30%]"
             onError={() => setFailed(true)}
           />
         ) : (
