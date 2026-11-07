@@ -6,7 +6,11 @@ export function About() {
     <section id={about.id} className="scroll-mt-24 px-4 py-16 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <SectionHeading index={about.index} eyebrow={about.eyebrow} title={about.title} />
-        <p className="mt-8 max-w-3xl border-l-2 border-cyan/60 pl-5 text-lg leading-relaxed text-mist">{about.text}</p>
+        <div className="mt-8 max-w-3xl space-y-4 border-l-2 border-cyan/60 pl-5 text-lg leading-relaxed text-mist">
+          {(Array.isArray(about.text) ? about.text : [about.text]).map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
         {Array.isArray(about.languages) && about.languages.length > 0 ? (
           <div className="mt-8 max-w-3xl">
             <h3 className="text-sm font-medium uppercase tracking-[0.18em] text-muted">Languages</h3>

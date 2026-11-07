@@ -20,7 +20,8 @@ export const profile = {
   name: "Balaji Vijayan",
   title: "Software Developer",
   kicker: "Electronics and Communication Engineering · Graduating 2027",
-  objective: "Seeking entry-level Software Developer roles, and open to Embedded and Hardware roles. Graduating 2027.",
+  objective:
+    "I'm an Electronics and Communication Engineering student at Sri Krishna College of Engineering and Technology, Coimbatore, graduating in 2027. I build software with C++, Python, Java and SQL, and I like working where code meets hardware, from full-stack web apps to ESP32-based IoT systems. I am seeking entry-level Software Developer roles, and I am also open to Embedded and Hardware roles.",
   openToWork: true,
   openToWorkText: "Open to opportunities · 2027 graduate",
   photo: {
@@ -76,8 +77,11 @@ export const about = {
   index: "01",
   eyebrow: "About",
   title: "About",
-  /** Verbatim. Do not edit the wording except to correct a typo Balaji asks for. */
-  text: "I'm an Electronics and Communication Engineering student at Sri Krishna College of Engineering and Technology, Coimbatore, graduating in 2027. I build software with C++, Python, Java and SQL, and I like working where code meets hardware, from full-stack web apps to ESP32-based IoT systems. I enjoy solving real problems, collaborating in teams, and turning ideas into working products.",
+  text: [
+    "I'm an Electronics and Communication Engineering student at Sri Krishna College of Engineering and Technology, Coimbatore, graduating in 2027 with a CGPA of 8.15. I build software with C++, Python, Java and SQL, and I like working where code meets hardware, from full-stack web apps to ESP32-based IoT systems.",
+    "I have interned as a Full Stack Intern at Tech Forge, as a Switchgear Engineering Intern at Megawin Switchgear Private Limited, and as a Central Electrical Maintenance Intern at SAIL Salem Steel Plant. My projects include a personal full-stack ATM cash replenishment and downtime monitoring system, as well as team projects such as Inhalo Tracker, a hybrid footsteps energy harvesting tile, and an AI-based adaptive spectrum sharing system for emergency communication networks.",
+    "I enjoy solving real problems, collaborating in teams, and turning ideas into working products.",
+  ],
   /** Spoken and programming languages. The About section hides this block while the array is empty. */
   languages: ["Tamil (Fluent)", "English (Fluent)", "Hindi (Intermediate)"],
 };

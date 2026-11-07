@@ -6,13 +6,13 @@ export function ProfileAvatar({ photo, className = "" }) {
   return (
     <div className={`pcb-frame relative ${className}`}>
       <div className="absolute -inset-3 rounded-[1.6rem] border border-cyan/20" aria-hidden="true" />
-      <div className="relative grid h-40 w-40 place-items-center overflow-hidden rounded-2xl border border-cyan/40 bg-navy shadow-[0_0_40px_rgba(94,231,255,0.12)] sm:h-52 sm:w-52">
+      <div className="relative grid h-64 w-64 place-items-center overflow-hidden rounded-2xl border border-cyan/40 bg-navy shadow-[0_0_40px_rgba(94,231,255,0.12)] sm:h-80 sm:w-80 lg:h-[22.5rem] lg:w-[22.5rem]">
         {!failed ? (
           <img
             src={photo.src}
             alt={photo.alt}
-            width="320"
-            height="320"
+            width="360"
+            height="360"
             className="h-full w-full object-cover object-[center_30%]"
             onError={() => setFailed(true)}
           />

@@ -32,7 +32,7 @@ function TypingTitle({ text }) {
 export function Hero() {
   return (
     <section id="home" className="scroll-mt-24 px-4 pb-16 pt-12 sm:px-6 sm:pt-20">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[minmax(0,1fr)_25rem]">
         <div className="order-2 lg:order-1">
           {profile.openToWork ? (
             <p className="inline-flex items-center gap-2 rounded-full border border-cyan/30 bg-cyan/10 px-3 py-1 text-xs text-cyan">
@@ -43,7 +43,7 @@ export function Hero() {
           <p className="mt-4 font-mono text-xs uppercase tracking-[0.22em] text-blue">{profile.kicker}</p>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight text-white sm:text-6xl">{profile.name}</h1>
           <TypingTitle text={profile.title} />
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-mist sm:text-lg">{profile.objective}</p>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-mist sm:text-lg">{profile.objective}</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href={profile.resume.href}
