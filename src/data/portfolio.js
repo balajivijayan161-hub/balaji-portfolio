@@ -491,6 +491,8 @@ export const education = [
     score: "CGPA 8.15",
     mode: "Full time",
     time: "Expected May 2027",
+    description:
+      "Bachelor's degree in Electronics and Communication Engineering at Sri Krishna College of Engineering and Technology, Coimbatore. Expected to graduate in May 2027, with a current CGPA of 8.15 in a full-time program.",
   },
   {
     id: "hsc",
@@ -500,6 +502,8 @@ export const education = [
     score: "74.2%",
     mode: "Full time",
     time: "April 2023",
+    description:
+      "Higher Secondary Certificate completed at Senthil Public School, Salem, in April 2023, with a score of 74.2% in a full-time program.",
   },
   {
     id: "sslc",
@@ -509,6 +513,8 @@ export const education = [
     score: "90%",
     mode: "Full time",
     time: "April 2021",
+    description:
+      "Secondary School Leaving Certificate completed at Notre Dame of Holy Cross, Salem, in April 2021, with a score of 90% in a full-time program.",
   },
 ];
 
@@ -568,6 +574,7 @@ export const certifications = [
     href: "/certificates/ccna-enterprise-networking.pdf",
     image: "/images/certificates/ccna-enterprise-networking.webp",
     imageAlt: "Cisco Networking Academy certificate for CCNA: Enterprise Networking, Security, and Automation",
+    description: "Cisco Networking Academy course covering enterprise networking, security, and automation.",
   },
   {
     id: "ccna-srwe",
@@ -577,6 +584,7 @@ export const certifications = [
     href: "/certificates/ccna-switching-routing-wireless.pdf",
     image: "/images/certificates/ccna-switching-routing-wireless.webp",
     imageAlt: "Cisco Networking Academy certificate for CCNA: Switching, Routing, and Wireless Essentials",
+    description: "Cisco Networking Academy course covering switching, routing, and wireless essentials.",
   },
   {
     id: "ccna-itn",
@@ -586,6 +594,7 @@ export const certifications = [
     href: "/certificates/ccna-introduction-to-networks.pdf",
     image: "/images/certificates/ccna-introduction-to-networks.webp",
     imageAlt: "Cisco Networking Academy certificate for CCNA: Introduction to Networks",
+    description: "Cisco Networking Academy course covering the fundamentals of computer networks.",
   },
   {
     id: "infosys-javascript",
@@ -595,6 +604,7 @@ export const certifications = [
     href: "/certificates/infosys-javascript.pdf",
     image: "/images/certificates/infosys-javascript.webp",
     imageAlt: "Infosys Springboard JavaScript certificate",
+    description: "Infosys Springboard course certificate in JavaScript.",
   },
   {
     id: "infosys-html5",
@@ -604,6 +614,7 @@ export const certifications = [
     href: "/certificates/infosys-html5.pdf",
     image: "/images/certificates/infosys-html5.webp",
     imageAlt: "Infosys Springboard HTML5 - The Language certificate",
+    description: "Infosys Springboard course certificate in HTML5.",
   },
   {
     id: "infosys-css3",
@@ -613,6 +624,7 @@ export const certifications = [
     href: "/certificates/infosys-css3.pdf",
     image: "/images/certificates/infosys-css3.webp",
     imageAlt: "Infosys Springboard CSS3 certificate",
+    description: "Infosys Springboard course certificate in CSS3.",
   },
   {
     id: "infosys-java",
@@ -620,6 +632,7 @@ export const certifications = [
     issuer: "Infosys Springboard",
     image: null,
     imageAlt: "Infosys Springboard Java certificate",
+    description: "Infosys Springboard course in Java.",
   },
   {
     id: "infosys-cpp",
@@ -627,6 +640,7 @@ export const certifications = [
     issuer: "Infosys Springboard",
     image: null,
     imageAlt: "Infosys Springboard C++ certificate",
+    description: "Infosys Springboard course in C++.",
   },
   {
     id: "infosys-sql",
@@ -634,6 +648,7 @@ export const certifications = [
     issuer: "Infosys Springboard",
     image: null,
     imageAlt: "Infosys Springboard SQL certificate",
+    description: "Infosys Springboard course in SQL.",
   },
 ];
 

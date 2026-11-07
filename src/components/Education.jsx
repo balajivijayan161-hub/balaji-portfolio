@@ -19,6 +19,7 @@ export function Education() {
                 <p className="mt-2 text-sm text-muted">
                   {item.score} · {item.mode}
                 </p>
+                {item.description ? <p className="mt-3 text-sm leading-relaxed text-muted">{item.description}</p> : null}
               </article>
             </li>
           ))}

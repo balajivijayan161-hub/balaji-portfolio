@@ -21,6 +21,7 @@ function CertificateCard({ item }) {
         <p className="text-xs uppercase tracking-[0.16em] text-cyan">{item.issuer}</p>
         <h3 className="mt-1 text-lg font-semibold leading-snug text-white">{item.name}</h3>
         {item.date ? <p className="mt-2 font-mono text-xs text-muted">{item.date}</p> : null}
+        {item.description ? <p className="mt-2 text-sm leading-relaxed text-muted">{item.description}</p> : null}
         {item.href ? <p className="mt-3 font-mono text-xs uppercase tracking-[0.14em] text-cyan">View certificate</p> : null}
       </div>
     </article>
@@ -31,6 +32,7 @@ function CertificateCard({ item }) {
         <p className="text-xs uppercase tracking-[0.16em] text-cyan">{item.issuer}</p>
         <h3 className="mt-1 text-lg font-semibold leading-snug text-white">{item.name}</h3>
         {item.date ? <p className="mt-2 font-mono text-xs text-muted">{item.date}</p> : null}
+        {item.description ? <p className="mt-2 text-sm leading-relaxed text-muted">{item.description}</p> : null}
       </div>
     </article>
   );
