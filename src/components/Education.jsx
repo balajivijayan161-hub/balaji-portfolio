@@ -17,7 +17,7 @@ export function Education() {
                   {item.school}, {item.place}
                 </p>
                 <p className="mt-2 text-sm text-muted">
-                  {item.score} · {item.mode}
+                  {[item.board, item.score, item.mode].filter(Boolean).join(" · ")}
                 </p>
                 {item.description ? <p className="mt-3 text-sm leading-relaxed text-muted">{item.description}</p> : null}
               </article>

@@ -502,8 +502,9 @@ export const education = [
     score: "74.2%",
     mode: "Full time",
     time: "April 2023",
+    board: "CBSE",
     description:
-      "Higher Secondary Certificate completed at Senthil Public School, Salem, in April 2023, with a score of 74.2% in a full-time program.",
+      "Higher Secondary Certificate completed under the CBSE board at Senthil Public School, Salem, in April 2023, with a score of 74.2% in a full-time program.",
   },
   {
     id: "sslc",
@@ -513,8 +514,9 @@ export const education = [
     score: "90%",
     mode: "Full time",
     time: "April 2021",
+    board: "CBSE",
     description:
-      "Secondary School Leaving Certificate completed at Notre Dame of Holy Cross, Salem, in April 2021, with a score of 90% in a full-time program.",
+      "Secondary School Leaving Certificate completed under the CBSE board at Notre Dame of Holy Cross, Salem, in April 2021, with a score of 90% in a full-time program.",
   },
 ];
 
