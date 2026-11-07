@@ -57,7 +57,7 @@ export function Projects() {
                       height={cover.height}
                       loading="lazy"
                       decoding="async"
-                      className="h-full w-full object-cover"
+                      className={`h-full w-full object-cover${project.id === "atm-cash-monitoring" ? " object-top" : ""}`}
                     />
                     {project.coverBadge ? (
                       <span className="absolute left-3 top-3 rounded-full bg-ink/85 px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-cyan">

@@ -162,7 +162,7 @@ export const projects = [
     credit: "Personal project",
     context: null,
     tech: ["Node.js", "Express", "EJS", "PostgreSQL", "PL/pgSQL", "Render"],
-    coverBadge: "Illustration",
+    coverBadge: null,
     github: "https://github.com/balajivijayan161-hub/atm-cash-monitoring",
     details: [
       "Personal full-stack project. Stack is Node.js and Express with EJS views, PostgreSQL and PL/pgSQL, deployed on Render.",
@@ -178,6 +178,50 @@ export const projects = [
       },
     ],
     gallery: [
+      {
+        src: "/images/projects/atm/dashboard.webp",
+        alt: "Fleet uptime dashboard of the ATM Cash Operations app, showing cash alerts, forecast risks, KPI cards, charts, and ticket tables.",
+        caption:
+          "Live demo of the month-to-date fleet uptime dashboard, including cash alerts, KPI cards, charts, and ticket tables. The figures are from the app’s sample dataset.",
+        width: 1905,
+        height: 3211,
+      },
+      {
+        src: "/images/projects/atm/atms.webp",
+        alt: "ATM inventory table listing machines, sites, branches, locations, status, cash on hand, and downtime.",
+        caption: "Live demo of the ATM inventory, showing the first page of the 450-machine list.",
+        width: 1905,
+        height: 1443,
+      },
+      {
+        src: "/images/projects/atm/forecast.webp",
+        alt: "Cash forecast page for one ATM, with expected withdrawal, cash still in the machine, recent same-weekday totals, and suggested cassette notes.",
+        caption:
+          "Live demo of the cash forecast for ATM-AMD-0317 at High-street market. It shows ₹8,07,420 expected, ₹16,83,343 already in the machine, and no shortfall.",
+        width: 1920,
+        height: 1072,
+      },
+      {
+        src: "/images/projects/atm/runs.webp",
+        alt: "Replenishment runs table with dates, locations, vans, custodians, planned or completed status, stops, and loaded totals.",
+        caption: "Live demo of replenishment runs, with planned and completed trips, vans, custodians, stops, and loaded totals.",
+        width: 1905,
+        height: 1412,
+      },
+      {
+        src: "/images/projects/atm/downtime-report.webp",
+        alt: "Month-to-date downtime report listing ATMs marked out of service, with downtime and uptime percentages.",
+        caption: "Live demo of the downtime-above-5% report. In this sample, ten machines are marked out of service at 100% downtime.",
+        width: 1920,
+        height: 1072,
+      },
+      {
+        src: "/images/projects/atm/login.webp",
+        alt: "Sign-in page of ATM Cash Operations, with empty username and password fields.",
+        caption: "Live demo sign-in screen, used for role-based access.",
+        width: 1920,
+        height: 1072,
+      },
       {
         src: "/images/projects/atm/cover.svg",
         alt: "Line illustration of an ATM linked to role access, cash forecasting, and an activity log. Not a screenshot of the app.",
