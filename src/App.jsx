@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { AuthProvider } from "./auth/AuthProvider.jsx";
-import { nav } from "./data/portfolio.js";
+import { nav, projects, site } from "./data/portfolio.js";
 import { About } from "./components/About.jsx";
 import { Activities } from "./components/Activities.jsx";
 import { Contact } from "./components/Contact.jsx";
@@ -9,6 +9,7 @@ import { Experience } from "./components/Experience.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Hero } from "./components/Hero.jsx";
 import { Navbar } from "./components/Navbar.jsx";
+import { ProjectPage } from "./components/ProjectPage.jsx";
 import { Projects } from "./components/Projects.jsx";
 import { Skills } from "./components/Skills.jsx";
 import { AdminPage } from "./components/AdminPage.jsx";
@@ -21,6 +22,12 @@ const AdminDevPreview = import.meta.env.DEV
 
 function normalizePath(pathname) {
   return pathname.replace(/\/+$/, "") || "/";
+}
+
+function projectFromPath(path) {
+  const match = path.match(/^\/projects\/([^/]+)$/) || path.match(/^\/projects\/([^/]+)\/index\.html$/);
+  if (!match) return null;
+  return projects.find((project) => project.id === match[1]) || false;
 }
 
 function NotFound() {
@@ -143,12 +150,28 @@ function Portfolio() {
   );
 }
 
+function HomepageTitle() {
+  useEffect(() => {
+    document.title = site.title;
+  }, []);
+  return null;
+}
+
 export default function App() {
   const [path] = useState(() => normalizePath(window.location.pathname));
+  const project = projectFromPath(path);
 
   let page = <NotFound />;
-  if (path === "/" || path === "/index.html") page = <Portfolio />;
-  if (path === "/admin" || path === "/admin/index.html") {
+  if (path === "/" || path === "/index.html") {
+    page = (
+      <>
+        <HomepageTitle />
+        <Portfolio />
+      </>
+    );
+  } else if (project) {
+    page = <ProjectPage project={project} />;
+  } else if (path === "/admin" || path === "/admin/index.html") {
     page = (
       <>
         <AdminRobots />

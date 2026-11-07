@@ -3,7 +3,7 @@ import path from "node:path";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, loadEnv } from "vite";
-import { contact, education, profile, site, socials } from "./src/data/portfolio.js";
+import { contact, education, profile, projects, site, socials } from "./src/data/portfolio.js";
 
 function escapeHtml(value) {
   return String(value)
@@ -22,7 +22,9 @@ function robotsTxt(origin) {
 }
 
 function sitemapXml(origin) {
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url>\n    <loc>${origin}/</loc>\n  </url>\n</urlset>\n`;
+  const urls = ["/", ...projects.map((project) => `/projects/${project.id}`)];
+  const body = urls.map((url) => `  <url>\n    <loc>${origin}${url}</loc>\n  </url>`).join("\n");
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
 }
 
 function htmlMeta(env) {

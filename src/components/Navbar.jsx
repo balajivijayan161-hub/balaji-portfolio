@@ -32,13 +32,13 @@ export function Navbar({ active, onNavigate }) {
 
   function go(id) {
     setOpen(false);
-    onNavigate(id);
+    onNavigate?.(id);
   }
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-ink/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <a href="#home" className="font-mono text-sm tracking-[0.18em] text-cyan" onClick={() => go("home")}>
+        <a href="/#home" className="font-mono text-sm tracking-[0.18em] text-cyan" onClick={() => go("home")}>
           {profile.photo.initials}
         </a>
         <nav className="hidden lg:block" aria-label="Primary">
@@ -46,7 +46,7 @@ export function Navbar({ active, onNavigate }) {
             {nav.map((item) => (
               <li key={item.id}>
                 <a
-                  href={`#${item.id}`}
+                  href={`/#${item.id}`}
                   aria-current={active === item.id ? "true" : undefined}
                   onClick={() => go(item.id)}
                   className={`rounded-full px-2.5 py-1.5 text-sm transition-colors ${
@@ -97,7 +97,7 @@ export function Navbar({ active, onNavigate }) {
               {nav.map((item) => (
                 <li key={item.id}>
                   <a
-                    href={`#${item.id}`}
+                    href={`/#${item.id}`}
                     aria-current={active === item.id ? "true" : undefined}
                     onClick={() => go(item.id)}
                     className={`block rounded-lg px-3 py-3 text-base ${
