@@ -13,7 +13,7 @@ export const site = {
   author: "Balaji Vijayan",
   themeColor: "#071018",
   /** Google Search Console token. VITE_GOOGLE_SITE_VERIFICATION overrides this when set. */
-  googleSiteVerification: "",
+  googleSiteVerification: "4lq-j7kK8ikc1tV2U5ZeEKQnZYzfBRAH_yy0UzkWg3w",
 };
 
 export const profile = {
