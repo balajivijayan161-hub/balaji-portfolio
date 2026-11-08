@@ -10,7 +10,9 @@ export function Skills() {
     <section id={skills.id} className="scroll-mt-24 px-4 py-16 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <SectionHeading index={skills.index} eyebrow={skills.eyebrow} title={skills.title}>
-          {skills.intro}
+          {(Array.isArray(skills.intro) ? skills.intro : [skills.intro]).map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </SectionHeading>
         <div className="mt-8 grid gap-5 lg:grid-cols-3">
           {skills.groups.map((group) => (

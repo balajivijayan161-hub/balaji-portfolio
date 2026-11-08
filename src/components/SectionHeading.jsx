@@ -5,7 +5,7 @@ export function SectionHeading({ index, eyebrow, title, children }) {
         {index} <span className="text-muted">/ {eyebrow}</span>
       </p>
       <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white text-balance sm:text-4xl">{title}</h2>
-      {children ? <p className="mt-3 text-base leading-relaxed text-muted">{children}</p> : null}
+      {children ? <div className="mt-3 space-y-2 text-base leading-relaxed text-muted">{children}</div> : null}
     </div>
   );
 }

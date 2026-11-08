@@ -93,7 +93,9 @@ export function Contact() {
       <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
         <div>
           <SectionHeading index={contact.index} eyebrow={contact.eyebrow} title={contact.title}>
-            {contact.intro}
+            {(Array.isArray(contact.intro) ? contact.intro : [contact.intro]).map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
           </SectionHeading>
           <ul className="mt-8 space-y-3 text-mist">
             <li>

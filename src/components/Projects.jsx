@@ -35,7 +35,9 @@ export function Projects() {
     <section id={projectsSection.id} className="scroll-mt-24 px-4 py-16 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <SectionHeading index={projectsSection.index} eyebrow={projectsSection.eyebrow} title={projectsSection.title}>
-          {projectsSection.intro}
+          {(Array.isArray(projectsSection.intro) ? projectsSection.intro : [projectsSection.intro]).map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </SectionHeading>
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           {projects.map((project) => {

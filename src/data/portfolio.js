@@ -91,8 +91,11 @@ export const skills = {
   index: "02",
   eyebrow: "Technical skills",
   title: "Technical Skills",
-  intro:
-    "Software languages and tools, plus the embedded hardware I use in projects.",
+  intro: [
+    "I work across software and embedded hardware, from full-stack web apps to ESP32-based IoT systems.",
+    "On the software side I use C++, Python, Java, and SQL, along with Node.js, Express, PostgreSQL, and HTML, CSS, and JavaScript.",
+    "On the hardware side I work with ESP32 boards, sensor integration, and RF tools such as CC1101 and RTL-SDR, plus Arduino IDE, MATLAB, and related lab tools.",
+  ],
   groups: [
     {
       id: "software",
@@ -149,8 +152,12 @@ export const projectsSection = {
   index: "03",
   eyebrow: "Projects",
   title: "Projects",
-  intro:
-    "Personal and team projects spanning full-stack software, IoT, and hardware.",
+  intro: [
+    "These are personal and team projects in full-stack software, IoT, and hardware.",
+    "The personal project is an ATM cash replenishment and downtime monitoring system, built with Node.js, Express, and PostgreSQL and hosted on Render.",
+    "The team projects are Inhalo Tracker, a breath-analysis screening prototype; a hybrid footsteps energy harvesting tile; and an AI-based adaptive spectrum sharing system for emergency communication networks.",
+    "Each card opens a page with the write-up, tech stack, and photos.",
+  ],
 };
 
 export const projects = [
@@ -765,8 +772,11 @@ export const contact = {
   index: "07",
   eyebrow: "Contact",
   title: "Contact",
-  intro:
-    "For campus placements or project conversations, send a message with the form or email me directly.",
+  intro: [
+    "I am open to campus placement conversations and project discussions.",
+    "Send a message with the form below, or email me directly at balajivijayan161@gmail.com.",
+    "I am based in Coimbatore and Salem. You can also find me on GitHub, LinkedIn, and LeetCode.",
+  ],
   email: "balajivijayan161@gmail.com",
   location: "Coimbatore / Salem",
   form: {
