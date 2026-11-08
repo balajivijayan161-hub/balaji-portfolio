@@ -144,7 +144,7 @@ export function ProjectPage({ project }) {
                 ))}
               </ul>
             ) : (
-              <p className="mt-6 text-sm text-muted">No public repository or demo link is listed for this project.</p>
+              <p className="mt-6 text-sm text-muted">No public repository or demo link is available for this project.</p>
             )}
           </article>
         </main>

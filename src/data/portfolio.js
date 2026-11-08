@@ -92,7 +92,7 @@ export const skills = {
   eyebrow: "Technical skills",
   title: "Technical Skills",
   intro:
-    "Hardware and software are listed with equal weight. There is no proficiency score.",
+    "Software languages and tools, plus the embedded hardware I use in projects.",
   groups: [
     {
       id: "software",
@@ -150,7 +150,7 @@ export const projectsSection = {
   eyebrow: "Projects",
   title: "Projects",
   intro:
-    "Four projects. Team projects name everyone involved. Nothing here is claimed as one person's work unless it is marked as a personal project.",
+    "Personal and team projects spanning full-stack software, IoT, and hardware.",
 };
 
 export const projects = [
@@ -224,9 +224,8 @@ export const projects = [
       },
       {
         src: "/images/projects/atm/cover.svg",
-        alt: "Line illustration of an ATM linked to role access, cash forecasting, and an activity log. Not a screenshot of the app.",
-        caption:
-          "Original illustration of the system idea. It is not a screenshot of the live app.",
+        alt: "Concept illustration of an ATM linked to role access, cash forecasting, and an activity log.",
+        caption: "Concept illustration of the system.",
         width: 1200,
         height: 750,
       },
@@ -255,7 +254,7 @@ export const projects = [
     coverBadge: null,
     github: "",
     details: [
-      "Final-year project report, September 2026, by Balaji V, Bineesh S, and Haniel Johnson A at Sri Krishna College of Engineering and Technology. Supervisor: Dr. N. Sathishkumar, Associate Professor, Electronics and Communication Engineering. The report does not split tasks among the three members.",
+      "Final-year project report, September 2026, by Balaji V, Bineesh S, and Haniel Johnson A at Sri Krishna College of Engineering and Technology. Supervisor: Dr. N. Sathishkumar, Associate Professor, Electronics and Communication Engineering.",
       "ESP32 sensor nodes use an MQ-2 smoke and gas sensor, a DHT22 temperature and humidity sensor, and an SW-420 vibration sensor. CC1101 transceivers carry 433 MHz links. The receiver node uses a TFT ILI9341 display.",
       "An RTL-SDR with GNU Radio senses the 433 MHz ISM band. Processing extracts RSSI, SNR, signal energy, and channel occupancy. A Random Forest classifier labels a channel FREE or BUSY. A Q-learning agent selects a channel and prioritises emergency traffic.",
       "The report includes a GNU Radio simulation, a Python dashboard simulation of emergency detection and channel selection, and a hardware prototype of the ESP32–CC1101 nodes. Serial logs in the report show sensor packets sent and received.",
@@ -355,7 +354,7 @@ export const projects = [
     coverBadge: "Screening prototype",
     github: "",
     details: [
-      "Project report, November 2025, by Aashif Ahamed M, Balaji V, Bineesh S, and Haniel Johnson A. The bonafide certificate names Mr. N. Girinath, Assistant Professor, as supervisor. The report does not split tasks among the four members.",
+      "Project report, November 2025, by Aashif Ahamed M, Balaji V, Bineesh S, and Haniel Johnson A. The bonafide certificate names Mr. N. Girinath, Assistant Professor, as supervisor.",
       "This is a student screening prototype. It is not a medical device and it does not diagnose. It reads breath-sensor responses associated, in the report, with biomarkers for diabetes (MQ-3, acetone), kidney conditions (MQ-135, ammonia), liver conditions (MQ-136, hydrogen sulfide), and H. pylori (MQ-2, hydrogen).",
       "The MQ sensors are sampled with an ADS1115 ADC. The report uses a BME280 for temperature and humidity compensation and also describes a DHT22 as an alternative. Results are shown on an OLED, on Blynk, and on a local dashboard written with HTML, CSS, and JavaScript. A Proteus simulation is included in the report.",
       "The OLED and Blynk images below are reproduced from the report, including the words those screens display. Read them as prototype output, not a clinical result.",
@@ -450,7 +449,7 @@ export const projects = [
     coverBadge: null,
     github: "",
     details: [
-      "Prototype lab report for course 23EC603, March 2026, by Balaji V, Bineesh S, and Haniel Johnson A. Faculty in charge: Mr. N. Girinath, Assistant Professor. The report does not split tasks among the three members.",
+      "Prototype lab report for course 23EC603, March 2026, by Balaji V, Bineesh S, and Haniel Johnson A. Faculty in charge: Mr. N. Girinath, Assistant Professor.",
       "The tile uses an array of piezoelectric discs plus a triboelectric layer of PTFE and aluminium. Footstep pressure and contact–separation each produce charge. Both paths are bridge-rectified, stored in a capacitor or supercapacitor, and raised with an MT3608 DC–DC boost converter to drive an LED or another low-power load such as a sensor.",
       "The lab report says capacitor voltage rises by about 0.002 V to 0.010 V per footstep until approximately 2.5 V, then discharges through the LED. The voltage graph and photographs in this gallery are taken from that report.",
     ],
@@ -767,7 +766,7 @@ export const contact = {
   eyebrow: "Contact",
   title: "Contact",
   intro:
-    "For campus placements and project conversations, send an email. The form checks your message in the browser before it sends.",
+    "For campus placements or project conversations, send a message with the form or email me directly.",
   email: "balajivijayan161@gmail.com",
   location: "Coimbatore / Salem",
   form: {
